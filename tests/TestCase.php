@@ -3,8 +3,8 @@
 namespace Jeroenv\EcdModuleInstaller\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Orchestra\Testbench\TestCase as Orchestra;
 use Jeroenv\EcdModuleInstaller\EcdModuleInstallerServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
