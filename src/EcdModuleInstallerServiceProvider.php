@@ -2,9 +2,9 @@
 
 namespace Jeroenv\EcdModuleInstaller;
 
+use Jeroenv\EcdModuleInstaller\Commands\EcdModuleInstallerCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Jeroenv\EcdModuleInstaller\Commands\EcdModuleInstallerCommand;
 
 class EcdModuleInstallerServiceProvider extends PackageServiceProvider
 {
