@@ -4,8 +4,8 @@ namespace Jeroenv\EcdModuleInstaller\ExtendedComposer;
 
 class Composer extends \Illuminate\Support\Composer
 {
-
-    public function run(array $command){
+    public function run(array $command)
+    {
 
         $command = array_merge($this->findComposer(), $command);
 
@@ -20,10 +20,8 @@ class Composer extends \Illuminate\Support\Composer
         }, [
             // we can pass in env var to the process instance here
             // setting any additional environmental variable to the process
-            'COMPOSER_HOME' => '$HOME/.config/composer'
+            'COMPOSER_HOME' => '$HOME/.config/composer',
         ]);
 
     }
-
-
 }

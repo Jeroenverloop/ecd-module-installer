@@ -21,6 +21,6 @@ class EcdModuleInstallerServiceProvider extends PackageServiceProvider
             ->hasViews()
             ->hasMigration('create_ecd_module_installer_table')
             ->hasCommand(EcdModuleInstallerCommand::class)
-            ->hasRoute("web");
+            ->hasRoute('web');
     }
 }
