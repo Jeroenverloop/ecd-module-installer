@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Jeroenv\EcdModuleInstaller\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class EcdModuleInstallerCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'ecd-module-installer';
 
     public $description = 'My command';
 
