@@ -17,9 +17,9 @@ class EcdModuleInstallerServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('ecd-module-installer')
-            //->hasConfigFile()
-            //->hasViews()
-            //->hasMigration('create_ecd_module_installer_table')
+            // ->hasConfigFile()
+            // ->hasViews()
+            // ->hasMigration('create_ecd_module_installer_table')
             ->hasCommand(EcdModuleInstallerCommand::class)
             ->hasRoute('web');
     }
