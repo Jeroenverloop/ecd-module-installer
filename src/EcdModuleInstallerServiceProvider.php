@@ -23,4 +23,13 @@ class EcdModuleInstallerServiceProvider extends PackageServiceProvider
             ->hasCommand(EcdModuleInstallerCommand::class)
             ->hasRoute('web');
     }
+
+    public function boot() : PackageServiceProvider
+    {
+        Parent::boot();
+
+        $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
+
+        return $this;
+    }
 }
