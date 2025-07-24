@@ -15,7 +15,7 @@ class EcdModuleInstallerCommand extends Command
 
     public function handle(): int
     {
-        $moduleDataController = new ModuleDataController();
+        $moduleDataController = new ModuleDataController;
 
         $modules = $moduleDataController->createFakeModuleData();
 
@@ -23,6 +23,7 @@ class EcdModuleInstallerCommand extends Command
             $composer = app()->make(Composer::class);
         } catch (BindingResolutionException $e) {
             echo $e->getMessage();
+
             return self::FAILURE;
         }
 
